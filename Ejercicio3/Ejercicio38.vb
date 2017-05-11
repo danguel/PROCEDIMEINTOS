@@ -1,4 +1,4 @@
-﻿Module Ejercicio37
+﻿Module Ejercicio38
     Enum Operaciones
         suma = 1
         resta = 2
@@ -6,27 +6,34 @@
         division = 4
     End Enum
     Sub main()
-        Dim x, op, opm As Byte
-        Dim num1, num2, num3, num4 As Double
-        Do
-            Console.WriteLine("ingrese una opcion para operar: 1-suma 2-resta 3-multiplicacion 4-division ")
-            op = Console.ReadLine
-            Console.WriteLine("ingrese de 2 a 4 numeros: ")
-            num1 = Console.ReadLine
-            num2 = Console.ReadLine
-            num3 = Console.ReadLine
-            num4 = Console.ReadLine
-            opcion(op)
-            opm = opcion(op)
-            'Console.WriteLine("El total de todo es de: " & operadores(opm, num1, num2, num3, num4))
-            Console.WriteLine("El total de todo es de: " & operadores(Operaciones.suma, num1, num2, num3, num4))
-            Console.WriteLine("resultado de la variable fuera de las opciones: " & suma(num1, num2, num3, num4))
-            Console.WriteLine("desea salir del programa: 1-si 0-no")
-            x = Console.ReadLine
-        Loop Until x <> 0
-        'Console.WriteLine("resultado de la variable fuera de las opciones: " & suma(num1, num2, num3, num4))
+        Dim op As Byte
+        Dim opm As byte
+        Dim num1, num2, num3 As Double
+
+        Console.WriteLine("ingrese una opcion para operar: 1-suma 2-resta 3-multiplicacion 4-division ")
+        op = Console.ReadLine
+        opcion(op)
+        opm = opcion(op)
+        num1 = 3
+        num2 = 4
+        num3 = 5
+
+        'opm = opcion(op)
+        If opm = 1 Then
+            Console.WriteLine("{0} + {1} + {2} = " & operadores(opm, num1, num2, num3), num1, num2, num3)
+        ElseIf opm = 2 Then
+            Console.WriteLine("{0} - {1} - {2} = " & operadores(opm, num1, num2, num3), num1, num2, num3)
+        ElseIf opm = 3 Then
+            Console.WriteLine("{0} * {1} * {2} = " & operadores(opm, num1, num2, num3), num1, num2, num3)
+        Else
+            Console.WriteLine("{0} / {1} / {2} = " & operadores(opm, num1, num2, num3), num1, num2, num3)
+        End If
+        Console.WriteLine("{0} + {1} + {2} = " & suma(num1, num2, num3), num1, num2, num3)
+        'Console.WriteLine("El total de todo es de: " & operadores(opm, 3, 3, 3))
+        'Console.WriteLine("resultado de la variable fuera de las opciones: " & suma(4, 6, 1, 88))
         Console.ReadKey()
     End Sub
+
     Private Function opcion(valor As Byte) As Byte
         If valor = Operaciones.suma Then
             Return 1
@@ -89,5 +96,4 @@
     Private Function suma(num1 As Integer, num2 As Integer, num3 As Integer, num4 As Integer) As Integer
         Return num1 + num2 + num3 + num4
     End Function
-
 End Module
