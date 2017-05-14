@@ -1,4 +1,4 @@
-﻿Module Ejercicio37_2_
+﻿Module Ejercicio37
     Enum Operaciones
         suma = 1
         resta = 2
