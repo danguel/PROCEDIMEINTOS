@@ -72,6 +72,7 @@
     <Compile Include="Ejercicio32.vb" />
     <Compile Include="Ejercicio33.vb" />
     <Compile Include="Ejercicio34.vb" />
+    <Compile Include="Ejercicio35.vb" />
     <Compile Include="Ejercicio36.vb" />
     <Compile Include="Ejercicio37.vb" />
     <Compile Include="Ejercicio38.vb" />
