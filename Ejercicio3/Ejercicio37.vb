@@ -24,12 +24,11 @@
             Return 2
         ElseIf valor = Operaciones.multiplicaion Then
             Return 3
-        ElseIf valor = Operaciones.division Then
+        Else
             Return 4
         End If
         Return opcion
     End Function
-
     Private Function operadores(num0 As Byte, num1 As Integer, num2 As Integer) As Double
         If (num0 = 1) Then
             Return num1 + num2
@@ -42,7 +41,6 @@
         End If
         Return operadores
     End Function
-
     Private Function operadores(num0 As Byte, num1 As Integer, num2 As Integer, num3 As Integer) As Double
         If (num0 = 1) Then
             Return num1 + num2 + num3
@@ -55,7 +53,6 @@
         End If
         Return operadores
     End Function
-
     Private Function operadores(num0 As Byte, num1 As Integer, num2 As Integer, num3 As Integer, num4 As Integer) As Double
         If (num0 = 1) Then
             Return num1 + num2 + num3 + num4
@@ -68,8 +65,6 @@
         End If
         Return operadores
     End Function
-
-
     Private Function suma(num1 As Integer, num2 As Integer) As Integer
         Return num1 + num2
     End Function

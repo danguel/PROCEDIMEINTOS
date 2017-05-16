@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7BC14099-A016-425E-8CE4-F9D49B5FFBDA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Ejercicio3.Ejercicio39</StartupObject>
+    <StartupObject>Ejercicio3.Ejercicio36</StartupObject>
     <RootNamespace>Ejercicio3</RootNamespace>
     <AssemblyName>Ejercicio3</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -74,6 +74,7 @@
     <Compile Include="Ejercicio34.vb" />
     <Compile Include="Ejercicio35.vb" />
     <Compile Include="Ejercicio36.vb" />
+    <Compile Include="Ejercicio37%28arreglo en clase%29.vb" />
     <Compile Include="Ejercicio37.vb" />
     <Compile Include="Ejercicio38.vb" />
     <Compile Include="Ejercicio39.vb" />
